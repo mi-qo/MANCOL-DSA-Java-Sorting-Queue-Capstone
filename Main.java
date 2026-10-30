@@ -68,9 +68,9 @@ public class Main {
         scanner.close();
     }
 
-    // --------------------------------------------------------
+ 
     // QUEUE OPERATION: ENQUEUE (Add New Order)
-    // --------------------------------------------------------
+   
     public static void addOrder(
             Scanner scanner,
             ArrayList<String> orderIds, 
@@ -116,9 +116,9 @@ public class Main {
         System.out.println("\nSuccess: Order " + id + " has been added and queued for processing.");
     }
 
-    // --------------------------------------------------------
+   
     // QUEUE OPERATION: DEQUEUE (Process Next Order)
-    // --------------------------------------------------------
+   
     public static void processNextOrder(Queue<String> processingQueue) {
         if (processingQueue.isEmpty()) {
             System.out.println("The processing queue is empty. No orders to process.");
@@ -131,9 +131,9 @@ public class Main {
         System.out.println("Status: Order packed and shipped!");
     }
 
-    // --------------------------------------------------------
+   
     // QUEUE OPERATION: PEEK (View Next in Line)
-    // --------------------------------------------------------
+  
     public static void viewQueue(Queue<String> processingQueue) {
         if (processingQueue.isEmpty()) {
             System.out.println("The queue is currently empty.");
@@ -144,9 +144,9 @@ public class Main {
         }
     }
 
-    // --------------------------------------------------------
+   
     // HELPER: DISPLAY ALL RECORDS
-    // --------------------------------------------------------
+ 
     public static void displayAllRecords(
             ArrayList<String> orderIds, 
             ArrayList<String> customerNames, 
@@ -166,9 +166,9 @@ public class Main {
         }
     }
 
-    // --------------------------------------------------------
+   
     // SORTING ALGORITHM 1: BUBBLE SORT (By Total Amount - Descending)
-    // --------------------------------------------------------
+  
     public static void bubbleSortByTotalAmount(
             ArrayList<String> orderIds, 
             ArrayList<String> customerNames, 
@@ -222,9 +222,9 @@ public class Main {
         displayAllRecords(orderIds, customerNames, apparelItems, totalAmounts);
     }
 
-    // --------------------------------------------------------
+ 
     // SORTING ALGORITHM 2: INSERTION SORT (By Customer Name)
-    // --------------------------------------------------------
+   
     public static void insertionSortByCustomerName(
             ArrayList<String> orderIds, 
             ArrayList<String> customerNames, 
